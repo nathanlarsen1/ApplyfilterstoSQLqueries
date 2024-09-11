@@ -1,11 +1,11 @@
-<h1>Apply filters to SQL queries</h1>
+<h1>Apply Filters to SQL Queries</h1>
 
 
 <h2>Project description</h2>
-For this project I played the part of a Cybersecurity Analyst working on a security team for an organization. It was my job to examine logs in a timely fashion using SQL queries to filter log data for user logins and employee computers for updates.<br/><br/>
+For this project, I acted as a Cybersecurity Analyst on a security team for an organization. My role involved examining logs in a timely manner by using SQL queries to filter log data related to user logins and employee computer updates.<br/><br/>
 
 <h2>Retrieve after hours failed login attempts</h2>
-I was charged to investigate a potential security incident that occurred after 18:00 which is after normal business hours. The following code demonstrates how I filtered failed logon attempts after normal business hours using a SQL query.</br></br>
+I was tasked with investigating a potential security incident that occurred after 18:00, which was outside of normal business hours. The following code demonstrates how I filtered failed logon attempts during this time using a SQL query.</br></br>
                                                 
 <p align="center">
 <img src="https://i.imgur.com/R1OgQmL.png" height="80%" width="80%" alt="Connection Attempt"/>
@@ -13,11 +13,11 @@ I was charged to investigate a potential security incident that occurred after 1
 <br />
 </p>
 
- In the screenshot, you will see the SQL query I used and the output from that query. The query starts by selecting all collumns from log_in_attempts table. Then it uses the WHERE clause with an AND operator to filter the results to output all of the logon attempts that occured after 18:00 and were not successful.</br></br>
+In the screenshot, you will see the SQL query I used and its output. The query begins by selecting all columns from the log_in_attempts table. It then uses a WHERE clause with an AND operator to filter the results, showing all logon attempts that occurred after 18:00 and were unsuccessful.</br></br>
  
 <h2>Retrieve login attempts on specific dates</h2>
 
-A suspicious event occurred on 2022-05-09. To investigate this event, I wanted to review all login attempts which occurred on that day and the day before. I used filters in SQL to create a query that identifies all login attempts that occurred on 2022-05-09 and 2022-05-08.</br></br>
+A suspicious event occurred on 2022-05-09. To investigate, I reviewed all login attempts from that day and the previous day. I used SQL filters to create a query that identified all login attempts on 2022-05-09 and 2022-05-08.</br></br>
 
 <p align="center">
 <img src="https://i.imgur.com/pAPISSU.png" height="80%" width="80%" alt="Connection Attempt"/>
@@ -25,11 +25,11 @@ A suspicious event occurred on 2022-05-09. To investigate this event, I wanted t
 <br />
 </p>
 
-In the screenshot, you will see the SQL query I used and the output from that query. The query starts by selecting all columns from log_in_attempts table. Then it uses the WHERE clause with an OR operator to filter the results to output all of the logon attempts that occured between '2022-05-09' and '2022-05-08'.</br></br>
+In the screenshot, you will see the SQL query I used and its output. The query begins by selecting all columns from the log_in_attempts table. It then uses a WHERE clause with an OR operator to filter the results, displaying all logon attempts that occurred on '2022-05-09' and '2022-05-08'.</br></br>
 
 <h2>Retrieve login attempts outside of Mexico</h2>
 
-There’s was suspicious activity with login attempts, but the team has determined that this activity didn't originate in Mexico. I needed to investigate login attempts that occurred outside of Mexico. I used filters in SQL to create a query that identified all login attempts that occurred outside of Mexico.</br></br> 
+There was suspicious activity with login attempts, but the team determined that this activity didn't originate from Mexico. I needed to investigate login attempts that occurred outside of Mexico. I used SQL filters to create a query that identified all login attempts originating from outside of Mexico.</br></br> 
 
 <p align="center">
 <img src="https://i.imgur.com/6BhvCIo.png" height="80%" width="80%" alt="Connection Attempt"/>
@@ -37,11 +37,11 @@ There’s was suspicious activity with login attempts, but the team has determin
 <br />
 </p>
 
-In the screenshot, you will see the SQL query I used and the output from that query. The query starts by selecting all columns from log_in_attempts table. Then it uses the WHERE clause with an NOT operator to filter the results to output all of the logon attempts that did not occurred in Mexico.</br></br>
+In the screenshot, you will see the SQL query I used and its output. The query begins by selecting all columns from the log_in_attempts table. It then uses a WHERE clause with a NOT operator to filter the results, displaying all logon attempts that did not occur in Mexico.</br></br>
 
 <h2>Retrieve employees in Marketing</h2>
 
-My team wanted to perform security updates on specific employee machines in the Marketing department. I was responsible for getting information on the specific employee machines and needed to query the employees table. I used filters in SQL to create a query that identified all employees in the Marketing department for all offices in the East building.<br/><br/>
+My team needed to perform security updates on specific employee machines in the Marketing department. I was responsible for gathering information on these machines, so I queried the employees table. I used SQL filters to create a query that identified all employees in the Marketing department across all offices in the East building.<br/><br/>
 
 <p align="center">
 <img src="https://i.imgur.com/12T6bRK.png" height="80%" width="80%" alt="Connection Attempt"/>
@@ -75,6 +75,7 @@ My team needed to make one more update to employee machines. The employees who w
 </p>
 
 In the screenshot, you will see the SQL query I used and the output from that query. The query starts by selecting all columns from the employees table. Then it uses the WHERE clause with an NOT operator to filter the results to output all of the employees not in the IT department.</br></br>
+
 <h2>Summary</h2>
 
-In this excerise, I demonstrated the use of SQL used by a Cybersecurity Analyst. Several examples displayed how SQL queries can be used to return information on user logins and user computer names.
+In this excerise, I demonstrated the use of SQL used by a Cybersecurity Analyst. Several examples displayed how SQL queries can be used to return information for user logins and user computers. Two different tables were used in these examples. One was log_in_attempts and the other was employees. Four different operators were used to filter out the necessary information for each task. These operators were AND, OR, NOT and LIKE. The percent sign wildcard was also utilized to filter data.
