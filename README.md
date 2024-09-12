@@ -2,7 +2,7 @@
 
 
 <h2>Project description</h2>
-For this project, I acted as a Cybersecurity Analyst on a security team for an organization. My role involved examining logs in a timely manner by using SQL queries to filter log data related to user logins and employee computer updates.<br/><br/>
+For this project, I acted as a Cybersecurity Analyst on a security team for an organization. My role involved examining logs in a timely manner by using SQL queries to filter log data related to user logins and employee computers.<br/><br/>
 
 <h2>Retrieve After Hours Failed Login Attempts</h2>
 I was tasked with investigating a potential security incident that occurred after 18:00, which was outside of normal business hours. The following code demonstrates how I filtered failed logon attempts during this time using a SQL query.</br></br>
