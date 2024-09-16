@@ -80,7 +80,7 @@ In the screenshot, you will see the SQL query I used and the output from that qu
 My team needed to make one more update to employee machines. The employees who were in the Information Technology department already had this update, but employees in all other departments needed it. I used filters in SQL to create a query which identified all employees not in the IT department.<br/><br/>
 
 <p align="center">
-<img src="https://i.imgur.com/9z5h37r.png" height="80%" width="80%" alt="Retrieve All Employees Not in IT"/>
+<img src="https://i.imgur.com/9z5H27r.png" height="80%" width="80%" alt="Retrieve All Employees Not in IT"/>
 <br />
 <br />
 </p>
